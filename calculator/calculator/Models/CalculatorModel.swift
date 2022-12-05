@@ -36,6 +36,13 @@ enum Keys:String{
         default : return Color("Voperator")
         }
     }
+    var buttonTextColor:Color{
+        switch self{
+        case .add, .subtract, .divide, .multiply, .equal: return Color(.white)
+        case .clear, .negative, .percentage: return Color(.black)
+        default : return Color(.white)
+        }
+    }
 }
 
 

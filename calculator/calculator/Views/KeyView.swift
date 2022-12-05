@@ -13,7 +13,6 @@ struct KeyView: View {
     @State var runningNumber = 0
     @State var currentOperation: Operation = .none
     @State var changeColor = false
-    @State var blur = 0
     
     let buttons:[[Keys]]=[
         [.clear, .negative, .percentage,.divide],
@@ -29,25 +28,23 @@ struct KeyView: View {
             HStack {
                 RoundedRectangle(cornerRadius: 15)
                     .frame(width: 350, height: 280)
-                    .foregroundColor(changeColor ? Color("num").opacity(0.4): Color.pink.opacity(0.5))
-                    .scaleEffect(changeColor ? 1.5 : 1.0)
+                    .foregroundColor(changeColor ? Color(.white).opacity(0.1): Color.orange.opacity(0.4))
+                    .scaleEffect(changeColor ? 1.7 : 1.0)
                     .shadow(color: .red, radius: 10)
                     .animation(Animation.easeInOut.speed(0.18).repeatForever(), value: changeColor)
                     .onAppear(perform: {
                         // after animation
-    //                    self.blur = 20
                         self.changeColor.toggle()
                         
                     })
                     .overlay(
                         Text(value)
-                            .font(.system(size: 70))
+                            .font(.system(size: 60))
                             .fontWeight(.bold)
                             .foregroundColor(.black)
                 )
             }.padding()
             
-        Text("Kishan's Calculator")
             ForEach(buttons, id: \.self){ row in
                 HStack(spacing: 10){
                     ForEach(row, id: \.self){ element in
@@ -56,16 +53,16 @@ struct KeyView: View {
                         }, label: {
                              Text(element.rawValue)
                                 .font(.system(size: 30))
-                                .foregroundColor(.black)
                                 .frame(
-                                    width: self.getWidth(element: element),
-                                    height: self.getHeight(element: element)
+                                    width: self.getWidth(element: element)-3,
+                                    height: self.getHeight(element: element)-3
                                 )
+                                .foregroundColor(element.buttonTextColor)
                                 .background(element.buttonColor)
                                 .cornerRadius(self.getWidth(element: element)/2)
                                 .shadow(color:
-                                        .purple.opacity(0.5),
-                                    radius: 10)
+                                        .purple.opacity(0.4),
+                                    radius: 8)
                         })
                     }
                 }
