@@ -5,6 +5,7 @@
 <ol type="I">
  <li><a href="https://github.com/iamkishansharma/complete-ios-developer-swiftui/tree/main/ProfileDesign">Profile Design</a></li>
  <li><a href="https://github.com/iamkishansharma/complete-ios-developer-swiftui/tree/main/SlotMachine">Slot Machine</a></li>
+ <li><a href="https://github.com/iamkishansharma/complete-ios-developer-swiftui/tree/main/calculator">Calculator</a></li>
 </ol>
 </h3>
 
@@ -27,6 +28,15 @@
 |<ul><li>[x] 13</li></ul>|14|15|16|17|18|<ul><li>[x] 19</li></ul>|
 |<ul><li>[x] 20</li></ul>|21|22|23|24|25|26|
 |<ul><li>[x] 27</li></ul>|28|29|30||||
+
+---------- December 2022 ------------
+|Sun|Mon|Tue|Wed|Thu|Fri|Sat|
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|||||1|2|<ul><li>[x] 3</li></ul>|
+|<ul><li>[x] 4</li></ul>|<ul><li>[x] 5</li></ul>|6|7|8|9|10|
+|11|12|13|14|15|16|17|
+|18|19|20|21|22|23|24|
+|25|26|27|28|29|30|31|
 
 
 
