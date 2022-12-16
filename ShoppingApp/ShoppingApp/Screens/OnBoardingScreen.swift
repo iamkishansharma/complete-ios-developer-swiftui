@@ -10,7 +10,7 @@ import SwiftUI
 struct OnBoardingScreen: View {
     var body: some View {
         NavigationView{
-            VStack(spacing: 30){
+            VStack(spacing: 20){
                 Spacer()
                 Image("img")
                     .resizable()
@@ -30,7 +30,7 @@ struct OnBoardingScreen: View {
                 NavigationLink(destination: HomeScreenView()){
                     RoundedRectangle(cornerRadius: 12)
                         .fill(Color("6"))
-                        .frame(width: 280, height: 60)
+                        .frame(width: 300, height: 60)
                         .overlay{
                             HStack(alignment: .center, spacing: 10){
                                 Text("Next").font(.system(.title2))
@@ -41,7 +41,6 @@ struct OnBoardingScreen: View {
                                     .font(.system(.title3))
                                     .fontWeight(.bold)
                             }.foregroundColor(.black)
-                            
                         }
                     
                     
@@ -49,6 +48,8 @@ struct OnBoardingScreen: View {
                 .shadow(color: .gray.opacity(0.2), radius: 8)
                 Spacer()
             }
+            .navigationTitle("")
+            .navigationBarHidden(true)
         }
     }
 }
