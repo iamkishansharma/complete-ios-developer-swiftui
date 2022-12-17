@@ -31,7 +31,7 @@ struct FruitCardView: View {
                 .background(Color(fruits.color))
                 .cornerRadius(20)
                 .padding()
-                .shadow(radius: 10)
+                .shadow(radius: 8, x:2, y:3)
             
             
             ZStack{

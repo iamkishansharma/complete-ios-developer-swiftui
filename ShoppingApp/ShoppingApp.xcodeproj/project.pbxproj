@@ -12,6 +12,8 @@
 		5E64E268294CAF430063D384 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E64E267294CAF430063D384 /* ImageData.swift */; };
 		5E64E26A294CAF6E0063D384 /* NearYouData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E64E269294CAF6E0063D384 /* NearYouData.swift */; };
 		5E64E26C294CB1280063D384 /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E64E26B294CB1280063D384 /* FruitCardView.swift */; };
+		5E738AED294DC703006006CB /* TopSellingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E738AEC294DC703006006CB /* TopSellingView.swift */; };
+		5E738AEF294DC71E006006CB /* DetailScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E738AEE294DC71E006006CB /* DetailScreenView.swift */; };
 		5EDA43A3293F65AD0047F37C /* ShoppingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA43A2293F65AD0047F37C /* ShoppingAppApp.swift */; };
 		5EDA43A5293F65AD0047F37C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDA43A4293F65AD0047F37C /* ContentView.swift */; };
 		5EDA43A7293F65AE0047F37C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDA43A6293F65AE0047F37C /* Assets.xcassets */; };
@@ -25,6 +27,8 @@
 		5E64E267294CAF430063D384 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		5E64E269294CAF6E0063D384 /* NearYouData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearYouData.swift; sourceTree = "<group>"; };
 		5E64E26B294CB1280063D384 /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
+		5E738AEC294DC703006006CB /* TopSellingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSellingView.swift; sourceTree = "<group>"; };
+		5E738AEE294DC71E006006CB /* DetailScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenView.swift; sourceTree = "<group>"; };
 		5EDA439F293F65AD0047F37C /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EDA43A2293F65AD0047F37C /* ShoppingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppApp.swift; sourceTree = "<group>"; };
 		5EDA43A4293F65AD0047F37C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,7 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				5E491F8E294B46C000A22BA3 /* HomeScreenView.swift */,
-				5E64E26B294CB1280063D384 /* FruitCardView.swift */,
+				5E738AEE294DC71E006006CB /* DetailScreenView.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -69,6 +73,15 @@
 				5E64E269294CAF6E0063D384 /* NearYouData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5E738AE8294DC61B006006CB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5E64E26B294CB1280063D384 /* FruitCardView.swift */,
+				5E738AEC294DC703006006CB /* TopSellingView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		5EDA4396293F65AD0047F37C = {
@@ -90,6 +103,7 @@
 		5EDA43A1293F65AD0047F37C /* ShoppingApp */ = {
 			isa = PBXGroup;
 			children = (
+				5E738AE8294DC61B006006CB /* Components */,
 				5E64E265294CAF160063D384 /* Models */,
 				5E491F8C294B467000A22BA3 /* Screens */,
 				5EDA43B0293F65FB0047F37C /* SplashScreenView.swift */,
@@ -180,9 +194,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E491F8B294B465A00A22BA3 /* OnBoardingScreen.swift in Sources */,
+				5E738AEF294DC71E006006CB /* DetailScreenView.swift in Sources */,
 				5EDA43A5293F65AD0047F37C /* ContentView.swift in Sources */,
 				5E491F8F294B46C000A22BA3 /* HomeScreenView.swift in Sources */,
 				5EDA43A3293F65AD0047F37C /* ShoppingAppApp.swift in Sources */,
+				5E738AED294DC703006006CB /* TopSellingView.swift in Sources */,
 				5E64E26A294CAF6E0063D384 /* NearYouData.swift in Sources */,
 				5E64E26C294CB1280063D384 /* FruitCardView.swift in Sources */,
 				5EDA43B1293F65FB0047F37C /* SplashScreenView.swift in Sources */,
