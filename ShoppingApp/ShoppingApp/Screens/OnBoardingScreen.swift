@@ -21,12 +21,16 @@ struct OnBoardingScreen: View {
                     Text("Order you favourite fruits.")
                         .font(.system(.largeTitle))
                         .fontWeight(.bold)
-                    Text("Order you favourite fruits.")
+                        .opacity(0.9)
+                    
+                    Text("Direct from farmers, because you deserve a better life & health.")
                         .font(.system(.body))
                         .foregroundColor(.black)
                         .opacity(0.7)
-                }
+                }.padding(.horizontal, 35)
+                
                 Spacer()
+                
                 NavigationLink(destination: HomeScreenView()){
                     RoundedRectangle(cornerRadius: 12)
                         .fill(Color("6"))
@@ -35,7 +39,7 @@ struct OnBoardingScreen: View {
                             HStack(alignment: .center, spacing: 10){
                                 Text("Next").font(.system(.title2))
                                     .fontWeight(.bold)
-                                    
+                                
                                 Image(systemName: "chevron.right")
                                     .foregroundColor(.black)
                                     .font(.system(.title3))
@@ -50,6 +54,8 @@ struct OnBoardingScreen: View {
             }
             .navigationTitle("")
             .navigationBarHidden(true)
+            .navigationBarTitleDisplayMode(.automatic)
+            
         }
     }
 }

@@ -17,32 +17,30 @@ struct FruitCardView: View {
             VStack(alignment: .leading, spacing: 5){
                 Text(fruits.title.rawValue.capitalized)
                     .fontWeight(.bold)
-                    .font(.system(.title2))
+                    .font(.system(.title3))
                     .foregroundColor(.black)
                 
-                    Text(fruits.price)
+                    Text("\(fruits.price) each")
                     .font(.system(.title3))
                     .foregroundColor(.black.opacity(0.6))
                 Spacer()
             }
             .padding()
-                .frame(width: 175, height:150, alignment: .center)
+                .frame(width: 170, height: 150, alignment: .center)
                 .background(Color(fruits.color))
                 .cornerRadius(20)
                 .padding()
-                .shadow(radius: 8, x:2, y:3)
             
             
             ZStack{
                 Image(fruits.image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 150, height: 110)
+                    .frame( height: 95)
             }
-            .offset(y:50)
-            .shadow(radius: 8)
+            .offset(y:45)
         }
-        .frame(width: 175, height: 250, alignment: .center)
+        .frame(width: 170, height: 150, alignment: .center)
         
     }
 }

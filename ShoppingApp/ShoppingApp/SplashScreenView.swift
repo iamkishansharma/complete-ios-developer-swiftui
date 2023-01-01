@@ -10,38 +10,43 @@ import SwiftUI
 struct SplashScreenView: View {
     @State var isActive: Bool = false
     @State private var size = 0.7
-    @State private var opacity = 0.4
+    @State private var opacity = 0.8
     
     var body: some View {
         if isActive {
             // load main screen after isActive set to true
             OnBoardingScreen()
         }else{
+            
             ZStack{
-                LinearGradient(colors: [Color("6"), .green.opacity(0.5)], startPoint: .zero, endPoint: .bottom)
+                Image("img")
+                    .resizable().scaledToFit()
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack{
-                    Image("shopping-girl")
-                        .resizable()
-                        .frame(width: UIScreen.main.bounds.width/1.1, height: UIScreen.main.bounds.height/2.7)
-                    
-                    Text("Shopping Center")
+                    Text("Fresh Fruits")
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .shadow(color: .purple, radius: 10)
+                        .foregroundColor(.green)
+                        .padding(30)
+                    Text("powered by")
+                        .font(.system(size: 10))
+                    Text("Shopping Center Inc.")
+                        .font(.system(size: 12))
+                        .fontWeight(.bold).foregroundColor(.black)
                 }
-                .scaleEffect(size)
-                .opacity(opacity)
-                .onAppear{
-                    withAnimation(.easeInOut(duration: 1.4)){
-                        self.size = 1.1
-                        self.opacity = 1.0
-                    }
+                .frame(width:UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/1.7, alignment: .bottom)
+                
+            }
+            .scaleEffect(size)
+            .opacity(opacity)
+            .onAppear{
+                withAnimation(.easeInOut(duration: 1.5)){
+                    self.size = 1.5
+                    self.opacity = 1.0
                 }
             }.onAppear{
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2){
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3){
                     withAnimation{
                         self.isActive = true
                     }

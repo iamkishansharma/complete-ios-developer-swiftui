@@ -20,12 +20,10 @@ struct NearYouScreenView: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
             ForEach(dataArray, id: \.id){ post in
-                
-                
                 NavigationLink(destination: StoreDetailsView(places: post)){
                     HStack{
-                        RoundedRectangle(cornerRadius: 15)
-                            .foregroundColor(.gray.opacity(0.2))
+                        RoundedRectangle(cornerRadius: 10)
+                            .foregroundColor(.white)
                             .frame(width: 100, height: 100)
                             .overlay(
                                 Image(post.image)
@@ -35,15 +33,18 @@ struct NearYouScreenView: View {
                         VStack(alignment: .leading){
                             Text("\(post.name)")
                                 .font(.system(.headline))
+                                .foregroundColor(.black)
                             Text("\(post.time)")
                                 .font(.system(.subheadline))
                                 .foregroundColor(.gray)
                             Text("\(post.rating)")
-                            
+                                .foregroundColor(.gray)
                         }
                         
-                    }
-                    .padding(.horizontal)
+                    }.frame(width: UIScreen.main.bounds.width-20, alignment: .leading)
+                        .background(.white.opacity(0.3))
+                        .cornerRadius(10)
+                        .padding(.horizontal)
                 }
             }
         }

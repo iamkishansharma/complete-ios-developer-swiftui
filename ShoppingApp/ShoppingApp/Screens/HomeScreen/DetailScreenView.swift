@@ -75,14 +75,14 @@ struct DetailScreenView: View {
                 .edgesIgnoringSafeArea(.top)
                 .clipShape(RoundedCornerShape.init(
                     corners: [.bottomLeft, .bottomRight], radius: 30))
-                .frame(width: .infinity, height: .infinity, alignment: .top)
+                .frame( alignment: .top)
                 .edgesIgnoringSafeArea(.top)
                 .shadow(color: .gray, radius: 5, x:5, y:5)
                 .overlay{
                     Image("\(fruit.rawValue)")
                         .resizable()
                         .frame(width: 250, height: 250, alignment: .center)
-                    //                        .offset(y: UIScreen.main.bounds.height/2)
+//                                            .offset(y: UIScreen.main.bounds.height/2)
                         .shadow(color: .gray, radius: 5, x:5, y:5)
                 }
             

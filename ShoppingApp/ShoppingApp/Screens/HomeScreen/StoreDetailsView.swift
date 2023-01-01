@@ -12,13 +12,14 @@ struct StoreDetailsView: View {
     var body: some View {
         VStack(alignment: .leading){
             RoundedRectangle(cornerRadius: 15)
-                .foregroundColor(.gray.opacity(0.2))
-                .frame( height: 300)
+                .foregroundColor(.white)
                 .overlay(
                     Image(places.image)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 )
+                .frame( height: 300)
+            
             VStack(alignment: .leading){
                 Text("\(places.name)").font(.title)
                     .font(.system(.title2))
@@ -29,8 +30,7 @@ struct StoreDetailsView: View {
             }
             Spacer()
                 
-        }
-        .padding(.horizontal)
+        }.padding(.horizontal).background(Color("6").opacity(0.7))
         
     }
 }
