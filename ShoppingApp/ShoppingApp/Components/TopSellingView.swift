@@ -23,22 +23,23 @@ struct TopSellingView: View {
         .init(id: 11, title: .kiwi, image: "kiwi", price: "$2.78 each", color: "6"),
         .init(id: 12, title: .lemon, image: "lemon", price: "$2.04 each", color: "1"),
         .init(id: 13, title: .blackberry, image: "blackberry", price: "$2.04 each", color: "2"),
-        .init(id: 14, title: .mango, image: "mango", price: "1.00 each", color: "3"),
+        .init(id: 14, title: .mango, image: "mango", price: "1.00 eamch", color: "3"),
         .init(id: 15, title: .muskmelon, image: "muskmelon", price: "$1.56 each", color: "4"),
         .init(id: 16, title: .pear, image: "pear", price: "$2.04 each", color: "5"),
         .init(id: 17, title: .pineapple, image: "pineapple", price: "$2.84 each", color: "6"),
         .init(id: 18, title: .plum, image: "plum", price: "$1.15 each", color: "1"),
         .init(id: 19, title: .strawberry, image: "strawbery", price: "$2.35 each", color: "2"),
         .init(id: 20, title: .watermelon, image: "watermelon", price: "$1.64 each", color: "3")]
+    
     var body: some View {
-//        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         ScrollView(.horizontal, showsIndicators: true){
             HStack(alignment: .center, spacing: 20){
                 ForEach(images, id: \.id){ post in
                     // pass DetailScreenView(fruit: post.title)
-                    NavigationLink(destination: DetailScreenView(fruit: post.title) ){
+                    NavigationLink(destination: DetailScreenView(fruit: post.title)){
                         FruitCardView(fruits: post)
-                    }
+                    }.frame(height: 170)
+                        .padding(.bottom, 30)
                 }
             }.padding(.leading, 10)
         }

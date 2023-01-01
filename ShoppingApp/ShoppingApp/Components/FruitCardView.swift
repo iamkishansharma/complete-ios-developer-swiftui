@@ -14,7 +14,6 @@ struct FruitCardView: View {
     let fruits: FruitModel
     var body: some View {
         ZStack{
-            
             VStack(alignment: .leading, spacing: 5){
                 Text(fruits.title.rawValue.capitalized)
                     .fontWeight(.bold)
@@ -41,7 +40,7 @@ struct FruitCardView: View {
                     .frame(width: 150, height: 110)
             }
             .offset(y:50)
-            .shadow(radius: 10)
+            .shadow(radius: 8)
         }
         .frame(width: 175, height: 250, alignment: .center)
         

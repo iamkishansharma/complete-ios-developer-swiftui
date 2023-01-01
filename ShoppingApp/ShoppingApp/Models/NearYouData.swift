@@ -8,7 +8,7 @@
 import Foundation
 
 struct PlacesModel{
-    var id: String
+    var id: Int
     var name: String
     var time: String
     var rating: String
