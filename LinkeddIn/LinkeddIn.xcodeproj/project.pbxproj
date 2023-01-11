@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E8C1E93296EE65F0045F2F0 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C1E92296EE65F0045F2F0 /* PostModel.swift */; };
+		5E8C1E95296EE6CB0045F2F0 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C1E94296EE6CB0045F2F0 /* NetworkModel.swift */; };
+		5E8C1E97296EE7EA0045F2F0 /* MyNetworksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8C1E96296EE7EA0045F2F0 /* MyNetworksView.swift */; };
 		5E9F9A912965B77B00B227CF /* LinkeddInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F9A902965B77B00B227CF /* LinkeddInApp.swift */; };
 		5E9F9A932965B77B00B227CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F9A922965B77B00B227CF /* ContentView.swift */; };
 		5E9F9A952965B77D00B227CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F9A942965B77D00B227CF /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E8C1E92296EE65F0045F2F0 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		5E8C1E94296EE6CB0045F2F0 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		5E8C1E96296EE7EA0045F2F0 /* MyNetworksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNetworksView.swift; sourceTree = "<group>"; };
 		5E9F9A8D2965B77B00B227CF /* LinkeddIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkeddIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E9F9A902965B77B00B227CF /* LinkeddInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkeddInApp.swift; sourceTree = "<group>"; };
 		5E9F9A922965B77B00B227CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +90,8 @@
 		5E9F9A9E2965B79B00B227CF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5E8C1E92296EE65F0045F2F0 /* PostModel.swift */,
+				5E8C1E94296EE6CB0045F2F0 /* NetworkModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -94,6 +102,7 @@
 				5ED2BD9E296D907C00EFD050 /* HomeScreenView.swift */,
 				5ED2BDA0296D97CB00EFD050 /* MessagesScreenView.swift */,
 				5ED2BDA2296D9C9F00EFD050 /* ProfileScreenView.swift */,
+				5E8C1E96296EE7EA0045F2F0 /* MyNetworksView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -177,10 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ED2BD9D296D8BC200EFD050 /* SearchBarView.swift in Sources */,
+				5E8C1E93296EE65F0045F2F0 /* PostModel.swift in Sources */,
 				5E9F9A932965B77B00B227CF /* ContentView.swift in Sources */,
+				5E8C1E95296EE6CB0045F2F0 /* NetworkModel.swift in Sources */,
 				5ED2BDA1296D97CB00EFD050 /* MessagesScreenView.swift in Sources */,
 				5ED2BD9F296D907D00EFD050 /* HomeScreenView.swift in Sources */,
 				5ED2BDA3296D9C9F00EFD050 /* ProfileScreenView.swift in Sources */,
+				5E8C1E97296EE7EA0045F2F0 /* MyNetworksView.swift in Sources */,
 				5E9F9A912965B77B00B227CF /* LinkeddInApp.swift in Sources */,
 				5E9F9AA12965B7C000B227CF /* SplashScreenView.swift in Sources */,
 			);
