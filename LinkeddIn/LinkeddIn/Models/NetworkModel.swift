@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct NetworkData {
+struct NetworkModel {
     var id: Int
     var name: String
     var position: String
-    var profileImage: String
     var mutualConnections: Int
+    var profileImage: String
 }

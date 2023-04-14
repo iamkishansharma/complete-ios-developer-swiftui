@@ -15,6 +15,9 @@
 		5E9F9A952965B77D00B227CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F9A942965B77D00B227CF /* Assets.xcassets */; };
 		5E9F9A982965B77D00B227CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E9F9A972965B77D00B227CF /* Preview Assets.xcassets */; };
 		5E9F9AA12965B7C000B227CF /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9F9AA02965B7C000B227CF /* SplashScreenView.swift */; };
+		5EB93D7C299F7490000CD707 /* InvitationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB93D7B299F7490000CD707 /* InvitationView.swift */; };
+		5EB93D7E299F7B61000CD707 /* PostCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB93D7D299F7B61000CD707 /* PostCardView.swift */; };
+		5EB93D80299F7FA2000CD707 /* PostActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB93D7F299F7FA2000CD707 /* PostActionView.swift */; };
 		5ED2BD9D296D8BC200EFD050 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED2BD9C296D8BC200EFD050 /* SearchBarView.swift */; };
 		5ED2BD9F296D907D00EFD050 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED2BD9E296D907C00EFD050 /* HomeScreenView.swift */; };
 		5ED2BDA1296D97CB00EFD050 /* MessagesScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED2BDA0296D97CB00EFD050 /* MessagesScreenView.swift */; };
@@ -31,6 +34,9 @@
 		5E9F9A942965B77D00B227CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E9F9A972965B77D00B227CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5E9F9AA02965B7C000B227CF /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		5EB93D7B299F7490000CD707 /* InvitationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationView.swift; sourceTree = "<group>"; };
+		5EB93D7D299F7B61000CD707 /* PostCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardView.swift; sourceTree = "<group>"; };
+		5EB93D7F299F7FA2000CD707 /* PostActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostActionView.swift; sourceTree = "<group>"; };
 		5ED2BD9C296D8BC200EFD050 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		5ED2BD9E296D907C00EFD050 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		5ED2BDA0296D97CB00EFD050 /* MessagesScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesScreenView.swift; sourceTree = "<group>"; };
@@ -111,6 +117,9 @@
 			isa = PBXGroup;
 			children = (
 				5ED2BD9C296D8BC200EFD050 /* SearchBarView.swift */,
+				5EB93D7B299F7490000CD707 /* InvitationView.swift */,
+				5EB93D7D299F7B61000CD707 /* PostCardView.swift */,
+				5EB93D7F299F7FA2000CD707 /* PostActionView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -185,12 +194,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB93D7E299F7B61000CD707 /* PostCardView.swift in Sources */,
+				5EB93D7C299F7490000CD707 /* InvitationView.swift in Sources */,
 				5ED2BD9D296D8BC200EFD050 /* SearchBarView.swift in Sources */,
 				5E8C1E93296EE65F0045F2F0 /* PostModel.swift in Sources */,
 				5E9F9A932965B77B00B227CF /* ContentView.swift in Sources */,
 				5E8C1E95296EE6CB0045F2F0 /* NetworkModel.swift in Sources */,
 				5ED2BDA1296D97CB00EFD050 /* MessagesScreenView.swift in Sources */,
 				5ED2BD9F296D907D00EFD050 /* HomeScreenView.swift in Sources */,
+				5EB93D80299F7FA2000CD707 /* PostActionView.swift in Sources */,
 				5ED2BDA3296D9C9F00EFD050 /* ProfileScreenView.swift in Sources */,
 				5E8C1E97296EE7EA0045F2F0 /* MyNetworksView.swift in Sources */,
 				5E9F9A912965B77B00B227CF /* LinkeddInApp.swift in Sources */,
